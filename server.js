@@ -12,8 +12,8 @@ app.use(express.static("public"));
 
 
 mongoose.connect('mongodb://localhost/artists', { useNewUrlParser: true });
-
-
+// mongoose.connect('mongodb://localhost/data', { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost/users', { useNewUrlParser: true });
 require('./routes/api-routes')(app);
 
 
