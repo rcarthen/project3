@@ -36,7 +36,7 @@ module.exports = function (app) {
 
 //put route to update an artists information
 app.put('/api/artists/:id', function (req, res) {
-  artists.findOneAndUpdate({_id: req.params.id}, req.body)
+  artists.findOneAndUpdate({_id: req.params.id}, req.body, {returnOriginal: false})
     .then(function (data) {
       res.json(data);
     })
