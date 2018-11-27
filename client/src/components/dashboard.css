@@ -1,0 +1,29 @@
+.welcome {
+    font-family: 'Lato', sans-serif;
+    margin-left: 3%;
+
+}
+
+#dash {
+    font-family: 'Lato', sans-serif;
+    margin-left: 8%;
+
+
+}
+#card {
+    height: 65vh;
+    width: 45vh;
+    margin: .80%;
+    font-family: 'Lato', sans-serif;
+
+}
+#profilepic{
+    height: 55vh;
+    width: 55vh;
+    margin: 8%;
+}
+
+
+ #more {
+    background-color: #232323;
+}

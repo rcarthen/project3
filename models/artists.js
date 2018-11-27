@@ -37,6 +37,12 @@ var ArtistsSchema = new Schema({
         type: String,
         trim: true,
         required: 'Required'
+    },
+
+    fans:{
+    type: String,
+    trim: true,
+    required:'Required'
     }
 
 });
