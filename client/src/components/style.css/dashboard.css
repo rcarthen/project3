@@ -11,8 +11,8 @@
 
 }
 #card {
-    height: 65vh;
-    width: 45vh;
+    height: 80vh;
+    width: 55vh;
     margin: .80%;
     font-family: 'Lato', sans-serif;
 
@@ -20,7 +20,7 @@
 #profilepic{
     height: 55vh;
     width: 55vh;
-    margin: 8%;
+    margin: 5.5%;
 }
 
 

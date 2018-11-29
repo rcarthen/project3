@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/tab-bar": "^0.41.0",
     "axios": "^0.18.0",
     "materialize-css": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-materialize": "^2.5.0",
+    "react-responsive-carousel": "^3.1.43",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },

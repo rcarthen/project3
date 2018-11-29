@@ -1,42 +1,22 @@
-// import React, {Component} from 'react';
-// import "./form.css";
+import React, {Component} from 'react';
+import "./form.stylecss";
+import {Row, Input} from 'react-materialize';
 
-// class Form extends Component{
-//     render(){
-//       //material UI
+class Form extends Component{
+    render(){
+        <Row>
+        <Input type="artist" label="Artist" s={12} />
+        <Input type="image" label="Image" s={12} />  
+        <Input type="genre" label="Genre" s={12} />
+        <Input type="city" label="City, Country" s={12} />
+        <Input type="city" label="City, Country" s={12} />
+        <Input type="ighandle" label="Instagram Handle" s={12} />
+        <Input type="website" label="Website" s={12} />
+        <Input type="listeners" label="Listeners" s={12} />
+    </Row>
 
-// <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-// <div id="modal1" class="modal">
-//   <div class="modal-content">
-//     <h5>New Artist</h4>
-//       <div className="container">
-//         <div>
-//           <input id="Artist Name" placeholder="Artist Name">
-//         </div>
-//         <div>
-//           <input id="Genre"  placeholder="Genre">
-//         </div>
-//         <div>
-//           <input id="Instagram Handle" placeholder="Instagram Handle">
-//         </div>
-//         <div>
-//           <input id="title" placeholder="Location">
-//         </div>
-//         <div>
-//           <input id="title"  placeholder="Image">
-//         </div>
-//         <div>
-//           <input id="title" placeholder="Website">
-//         </div>
-//         <div> <input id="listeners" placeholder="Listeners">
-//       </div>
-//   </div>
-//   <div class="modal-footer">
-//       <i class="material-icons prefix">add_circle</i>
-//     <a href="#!" class="modal-close waves-effect waves-white btn-flat">Add Artist</a>
-//   </div>
-// </div>;
-//     }
-//     }
-// export default Form;
+;
+    }
+    }
+export default Form;
           

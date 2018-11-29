@@ -3,29 +3,32 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Homepage from './components/homepage';
 import Dashboard from './components/dashboard';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Artistcard from './components/artistcard';
 
 class App extends Component {
   render() {
     return (
       <div>
-      <Navbar/>
-            <Router>
-              <div>
-      <Route exact path="/" component={Dashboard}/>
-      <Route path="/artists" component={Artistcard}/>
-      </div>
+      <Router>
+        <div>
+          <Navbar />
+            {/* <Link to={'/artists'}> Login </Link>
+            <Link to={'/'}> Register </Link> */}
+            {/* <Router> */}
+              <Switch>
+                <Route exact path="/" component={Homepage} />
+                <Route path="/artists" component={Dashboard} />
+              </Switch>
+        </div>
       </Router>
-       <Footer/>
-       </div>
+            <Footer/>
+            </div>
     );
   }
 }
 ///create Routes  ...create routes for each path
-
-
-
 
 export default App;

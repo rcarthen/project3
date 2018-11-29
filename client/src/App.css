@@ -30,3 +30,23 @@
     transform: rotate(360deg);
   }
 }
+
+#navbar {
+  background-color: #232323;
+  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+#meraki {
+  margin-left: 1%;
+}
+
+#dash {
+  font-family: 'Lato', sans-serif;
+  margin-left: 8%;
+
+
+}
+
+

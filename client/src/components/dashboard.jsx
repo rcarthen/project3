@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import './dashboard.css';
+import './style.css/dashboard.css';
 import {Link} from "react-router-dom";
 
 class Dashboard extends Component{
@@ -22,9 +22,9 @@ class Dashboard extends Component{
              <div className="row" className="container">
         <div className="col s12 m6">
             <ul className="tabs" className="black-text">
-                <li className="tab col s3" id="dash"><a href="#team">The Team</a></li>
-                <li className="tab col s3" id="dash"><a className="active" href="#artist"> New Artist</a></li>
-                <li className="tab col s3" id="dash"><a href="#calendar">Calendar</a></li>
+                <li className="tab col s4" id="dash"><a href="#team">The Team</a></li>
+                <li className="tab col s4" id="dash"><a className="active" href="#artist"> New Artist</a></li>
+                <li className="tab col s4" id="dash"><a href="#calendar">Calendar</a></li>
             </ul>
             <div>
                 {this.state.artists.map(item=>(
@@ -44,16 +44,19 @@ class Dashboard extends Component{
             <div className="card medium">
               <div className="card-image">
               <div>
-                <img id="profilepic"src={item.image}>
-                </img>
+              <a> <img id="profilepic"src={item.image}>
+                </img> </a>
                 </div>
-                <span className="card-title">{item.artist_name}</span>
               </div>
               <div className="card-content" id="card">
               <h5>{item.artist_name}</h5>
                 <p>Genre: {item.genre}</p>
                 <p>{item.ig_handle}</p>
-                <button className="waves-effect waves-light btn-small" data-id={item.id_} id="more" onClick={}>More Info</button>
+                <button className="waves-effect waves-light btn-small" data-id={item.id_} id="more">MORE</button>
+                {/* <button data-id={item.id_} onClick={this.state.artists.bind(this, id)}>MORE</button> */}
+                {/* <button data-id={item.id_} onClick=> {} axios.get( "/api/artists/id:").then(response=>{
+            console.log(response.data);
+            this.setState({artists:response.data}) */}
               </div>
             </div>
           </div>
