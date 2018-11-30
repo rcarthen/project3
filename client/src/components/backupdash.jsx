@@ -1,9 +1,10 @@
 // import React, {Component} from 'react';
+// import axios from "axios";
+// import "./style.css/dashboard.css";
 // import {Tabs, Tab} from 'react-materialize';
 // import Form from './form';
-// import axios from "axios";
 
-// class Newdash extends Component{
+// class Dashboard extends Component{
 //     constructor(props){
 //         super(props);
 //         this.state={
@@ -15,15 +16,13 @@
 //             console.log(response.data);
 //             this.setState({artists:response.data})
 //         })
+// // handlingFormSubmit () 
 //     }
-
-
-//         render(){
-//             return (
-//     <Tabs className='tab-demo z-depth-1'>
-//     <Tab title="Test 1">The Team
-    
-//     <div>
+//     render(){
+//         return (
+//         <Tabs className='tab-demo z-depth-1'>
+//     <Tab title="The Team">The Team
+//             <div>
 //                 {this.state.artists.map(item=>(
 //             <div className="container"> 
 //       <div className="row">
@@ -47,12 +46,10 @@
 //       </div>
 //     ))}
 //     </div>
-
-//     </Tab>
-//     <Tab title="New Artist" active><Form/></Tab>
+//         </Tab>
+//         <Tab title="New Artist" active><Form/></Tab>
 //             </Tabs>
-//             )
-//         }
-//     }
-
-// export default Newdash;
+//         )}
+// }
+// export default Dashboard;
+          
