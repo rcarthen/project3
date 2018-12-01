@@ -20,7 +20,9 @@ class App extends Component {
             {/* <Router> */}
               <Switch>
                 <Route exact path="/" component={Homepage} />
+                <Route path="/artists/:id" component={Artistcard} />
                 <Route path="/artists" component={Dashboard} />
+               
               </Switch>
         </div>
       </Router>
