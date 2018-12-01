@@ -4,28 +4,31 @@ import './style.css/artistcard.css';
 import {Button} from 'react-materialize';
 
 class Artistcard extends Component {
-    state = {}
-    
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
     componentDidMount() {
         axios.get("/api/artists/" + this.props.match.params.id).then(response => {
+            const artist_data = response.data
             console.log(response.data)
             this.setState({
-                artist_data:response.data
+                artist_data
             })
             console.log(this.state);
         })
     }
-    removeArtist= (event)=>{
-        event.preventDefault ();
-        console.log(this.state.artist_data._id)
-        axios.delete(`api/artists/${this.state.artist_data._id}`, this.state.artist_data._id)
-        .then((response)=>{
-            console.log(response);
+    // removeArtist= (event)=>{
+    //     event.preventDefault ();
+    //     console.log(this.state.artist_data._id)
+    //     axios.delete(`api/artists/${this.state.artist_data._id}`, this.state.artist_data._id)
+    //     .then((response)=>{
+    //         console.log(response);
         
-        })
-    }
+    //     })
+    // }
     render() {
-        return( <div>
+        return <div>
             <div className="container">
                 <div className="col s5 push-s7">
                     <img className="responsive-img" id="profilepic" src={this.state.artist_data && this.state.artist_data.image} />
@@ -41,7 +44,7 @@ class Artistcard extends Component {
                 </div>
             </div>
         </div>
-         ) ;
+            ;
 
     }
 }
