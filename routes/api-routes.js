@@ -1,5 +1,5 @@
 const artists = require('../models/artists');
-
+const users= require ('../models/users');
 module.exports = function (app) {
 
   //get route to retrieve all artists
@@ -53,8 +53,19 @@ app.put('/api/artists/:id', function (req, res) {
     res.json(error);
     });
   });
-}
     
+//route to post to users table 
+
+app.post('/api/users', function (req, res) {
+  console.log(req.body)
+  users.create(req.body)
+    .then(function (data) {
+      res.json({"result":"success"});
+    })
+    .catch(function (err) {
+      res.json(err);
+    });
+});
 
 
-
+}

@@ -1,33 +1,20 @@
 import React, {Component} from 'react';
 import "./style.css/navbar.css";
-import { BrowserRouter, Link } from 'react-router-dom';
-import Dashboard from './dashboard';
+import { Link } from 'react-router-dom';
 
-class Navbar extends Component{
-    render(){
-        return (
-        <div>
-
-          <nav>
-            <div className="nav-wrapper" id="navbar">
-              <a href="/" className="brand-logo" id="meraki">MERAKI</a>
-              <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-              
-                <div className='nav-button'>
-                  <Link to={'/artists'}> Login </Link> |
-                  <Link to={'/'}> Register </Link>
-                </div>
-            </div>
-          </nav>
-
-        <ul className="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Home</a></li>
-          <li><a href="badges.html">Our Purpose</a></li>
-          <li><a href="collapsible.html">Login</a></li>
-          <li><a href="mobile.html">Logout</a></li>
+class NavBar extends Component {
+  render() {
+    return (
+      <nav>
+      <div className="nav-wrapper" id="navbar">
+        <a href="/" className="brand-logo">MERAKI</a>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li><a href="/login">LOGIN</a></li>
+          <li><a href="/register">REGISTER</a></li>
         </ul>
       </div>
-        )
-    }
+    </nav>
+    )
+  }
 }
-export default Navbar;
+export default NavBar;

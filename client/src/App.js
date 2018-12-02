@@ -4,10 +4,11 @@ import './App.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Homepage from './components/homepage';
-import Dashboard from './components/dashboard';
+import Form from './components/form';
+import ArtistList from './components/artistList';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Artistcard from './components/artistcard';
-
+import Loginmodal from './components/loginmodal';
 class App extends Component {
   render() {
     return (
@@ -18,7 +19,10 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Homepage} />
                 <Route path="/artists/:id" component={Artistcard} />
-                <Route path="/artists" component={Dashboard} />
+                <Route path="/artists" component={ArtistList} />
+                <Route path="/newArtist" component={Form} />
+                <Route path="/updateArtist/:artistId" component={Form} />
+                <Route path= "/login" component={Loginmodal}/>
               </Switch>
         </div>
       </Router>
