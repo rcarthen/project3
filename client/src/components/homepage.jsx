@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './style.css/homepage.css';
-import Updateartist from "./updateartist";
-import { Navbar, NavItem } from 'react-materialize';
 
 
 class Homepage extends Component {
@@ -10,7 +8,10 @@ class Homepage extends Component {
    
   return(
 <div>
-  <p>Hello World</p>
+<h4 className="slogan">Make Music Meaningful</h4>
+<h5 className="make">The music industry's most contemporary & effective app.</h5>
+  <img className="responsive-img hpic" src="images/homepic.JPG"/>
+  
 </div>
 
   )

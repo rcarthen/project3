@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-// import "./style/form.css";
 import axios from "axios";
+import './style.css/artistList.css';
 import Artistcard from './artistcard';
 import DashNav from './dashNav';
 import { Link } from 'react-router-dom';
+
 
 
 class ArtistList extends Component {
@@ -30,19 +31,18 @@ class ArtistList extends Component {
                 {this.state.artists.map(item => (
                     <div className="container" key={item._id}>
                         <div className="row">
-                            <div className="col s12 m7">
+                            <div className="col s12 m4 l3, artistlist">
                                 <div className="card medium">
                                     <div className="card-image">
                                         <div>
-                                            <a> <img id="profilepic" src={item.image}>
-                                            </img> </a>
+                                         <img id="profilepic" src={item.image}/>
                                         </div>
                                     </div>
                                     <div className="card-content" id="card">
                                         <h5>{item.artist_name}</h5>
                                         <p>Genre: {item.genre}</p>
                                         <p>{item.ig_handle}</p>
-                                        <Link className="waves-effect waves-light btn-small" to={`/artists/${item._id}`}>MORE</Link>
+                                        <Link className="waves-effect waves-light btn-small" id="more" to={`/artists/${item._id}`}>DETAILS</Link>
                                     </div>
                                 </div>
                             </div>

@@ -23,8 +23,6 @@ app.listen(PORT, function () {
   console.log(`App running on port ${PORT}`);
 
 
-  
-
   // db.artists.create({
   //   artist_name: 'Yebba Smith',
   //   image: '/images/yebbasmith.jpg',

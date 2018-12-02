@@ -9,6 +9,8 @@ import ArtistList from './components/artistList';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Artistcard from './components/artistcard';
 import Loginmodal from './components/loginmodal';
+import Registermodal from "./components/registermodal";
+
 class App extends Component {
   render() {
     return (
@@ -22,6 +24,7 @@ class App extends Component {
                 <Route path="/artists" component={ArtistList} />
                 <Route path="/newArtist" component={Form} />
                 <Route path="/updateArtist/:artistId" component={Form} />
+                <Route path= "/register" component={Registermodal}/>
                 <Route path= "/login" component={Loginmodal}/>
               </Switch>
         </div>

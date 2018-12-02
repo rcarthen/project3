@@ -6,6 +6,8 @@
     min-height: 15vh;
     width: 100%;
     flex-direction: column;
+    position: absolute;
+    text-align: center;
 }
 
 #social {

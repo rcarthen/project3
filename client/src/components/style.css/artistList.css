@@ -1,0 +1,21 @@
+.artistlist{
+    font-family: 'Lato', sans-serif;
+}
+
+#more{
+    background-color: #56676A;
+}
+
+#card {
+    height: 65vh;
+    width: 55vh;
+    font-family: 'Lato', sans-serif;
+
+}
+#profilepic{
+    height: 45vh;
+    width: 40vh;
+    margin-left: 2%;
+    margin-top: 1.5%;
+
+}

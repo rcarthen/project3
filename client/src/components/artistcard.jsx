@@ -39,9 +39,10 @@ class Artistcard extends Component {
             </div>
             <div className="container">
                 <div className="col s5 push-s7">
-                    <img className="responsive-img" id="profilepic" src={this.state.artist_data && this.state.artist_data.image} />
+                    <img className="responsive-img" id="solopic" src={this.state.artist_data && this.state.artist_data.image}/>
+
                     <div className="container" id="moreinfo">
-                        <p>{this.state.artist_data && this.state.artist_data.artist_name}</p>
+                        <h5 id="artistcard">{this.state.artist_data && this.state.artist_data.artist_name}</h5>
                         <p>Genre: {this.state.artist_data && this.state.artist_data.genre}</p>
                         <p>{this.state.artist_data && this.state.artist_data.city_country}</p>
                         <p>IG Handle: {this.state.artist_data && this.state.artist_data.ig_handle}</p>

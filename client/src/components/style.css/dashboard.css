@@ -8,19 +8,16 @@
     font-family: 'Lato', sans-serif;
     margin-left: 8%;
 
-
 }
 #card {
-    height: 80vh;
+    height: 65vh;
     width: 55vh;
-    margin: .80%;
     font-family: 'Lato', sans-serif;
 
 }
 #profilepic{
     height: 55vh;
     width: 55vh;
-    margin: 5.5%;
 }
 
 
