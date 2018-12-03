@@ -22,7 +22,6 @@ require('./routes/api-routes')(app);
 app.listen(PORT, function () {
   console.log(`App running on port ${PORT}`);
 
-
   // db.artists.create({
   //   artist_name: 'Yebba Smith',
   //   image: '/images/yebbasmith.jpg',
@@ -30,7 +29,7 @@ app.listen(PORT, function () {
   //   city_country: 'New York City, NY',
   //   ig_handle: '@yebbasmith',
   //   website: 'https://www.yebbasmith.com/',
-  //   hashtag: 'foo'
+  //   hashtag: 'yebbasmith'
 
   // }).then(function (response) {
 
@@ -43,7 +42,7 @@ app.listen(PORT, function () {
   //   city_country: 'Atlanta, US',
   //   ig_handle: '@mereba',
   //   website: 'http://www.merebamusic.com/',
-  //   hashtag: 'foo'
+  //   hashtag: 'mereba'
   // }).then(function (response) {
 
   // });
@@ -55,7 +54,7 @@ app.listen(PORT, function () {
   //   city_country: 'London, GB',
   //   ig_handle: '@liannellahavas',
   //   website: 'http://www.liannelahavas.com/',
-  //   hashtag: 'foo'
+  //   hashtag: 'liannelahavas'
   // }).then(function (response) {
 
   // });
@@ -68,7 +67,7 @@ app.listen(PORT, function () {
   //   city_country: ' Los Angeles, US',
   //   ig_handle: '@zhaviaward',
   //   website: 'https://www.zhaviamusic.com/',
-  //   hashtag: 'foo'
+  //   hashtag: 'zhaviaward'
   // }).then(function (response) {
 
   // });
@@ -80,11 +79,10 @@ app.listen(PORT, function () {
   //   city_country: 'Wellington, New Zealand',
   //   ig_handle: '@aaradhna',
   //   website: 'http://www.aaradhna.com/',
-  //   hashtag: 'foo'
+  //   hashtag: 'aaradhna'
   // }).then(function (response) {
 
   // });
-
 
   // db.artists.create({
   //   artist_name: 'Jess Glynne',
@@ -93,7 +91,43 @@ app.listen(PORT, function () {
   //   city_country: 'London, GB',
   //   ig_handle: "@jessglynne",
   //   website: 'https://jessglynne.co.uk/',
-  //   hashtag: 'foo'
+  //   hashtag: 'jessglynne'
+  // }).then(function (response) {
+
+  // });
+
+  // db.artists.create({
+  //   artist_name: 'Yuna',
+  //   image: 'images/yuna.jpg',
+  //   genre: 'Soul',
+  //   city_country: 'Kuala Lumpur, Malaysia',
+  //   ig_handle: "@yuna",
+  //   website: 'http://yunamusic.com/',
+  //   hashtag: 'yuna'
+  // }).then(function (response) {
+
+  // });
+
+  // db.artists.create({
+  //   artist_name: 'Laura Mvula',
+  //   image: 'images/laura.jpg',
+  //   genre: 'Soul',
+  //   city_country: 'London, GB',
+  //   ig_handle: "@lauramvula",
+  //   website: 'http://studiostorehouse.com/client/laura-mvula/',
+  //   hashtag: 'lauramvula'
+  // }).then(function (response) {
+
+  // });
+
+  // db.artists.create({
+  //   artist_name: 'Shekhinah',
+  //   image: 'images/shek.jpg',
+  //   genre: 'Soul',
+  //   city_country: 'Durban, South Africa',
+  //   ig_handle: "@shekhinahd",
+  //   website: 'http://www.shekhinahd.com/about/',
+  //   hashtag: 'shekhinah'
   // }).then(function (response) {
 
   // });

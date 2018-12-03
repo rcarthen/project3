@@ -28,17 +28,14 @@ class ArtistList extends Component {
                     <DashNav />
                 </div>
                 <div>
-                {this.state.artists.map(item => (
-                    <div className="container" key={item._id}>
-                        <div className="row">
-                            <div className="col s12 m4 l3, artistlist">
-                                <div className="card medium">
+                    <div className="row">
+                        {this.state.artists.map(item => (
+                            <div className="s12 m6 l3" key={item._id}>
+                                <div className="card medium" id="card">
                                     <div className="card-image">
-                                        <div>
-                                         <img id="profilepic" src={item.image}/>
-                                        </div>
+                                        <img id="profilepic" src={item.image} />
                                     </div>
-                                    <div className="card-content" id="card">
+                                    <div className="card-content">
                                         <h5>{item.artist_name}</h5>
                                         <p>Genre: {item.genre}</p>
                                         <p>{item.ig_handle}</p>
@@ -46,9 +43,8 @@ class ArtistList extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                ))}
                 </div>
             </div>
         )

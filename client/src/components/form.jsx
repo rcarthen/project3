@@ -98,7 +98,7 @@ class Form extends Component {
                             <Input label="CITY, COUNTRY" onChange={this.captureUserInput} name="city_country" value={this.state.city_country} s={12} />
                             <Input label="INSTAGRAM" onChange={this.captureUserInput} name="ig_handle" value={this.state.ig_handle} s={12} />
                             <Input label="WEBSITE" onChange={this.captureUserInput} name="website" s={12} value={this.state.website} />
-                            <Input label="HASHTAG" onChange={this.captureUserInput} name="hashtag" s={12} value={this.state.hashtag} />
+                            <Input label="@TWITTER" onChange={this.captureUserInput} name="at" s={12} value={this.state.hashtag} />
                             <button className="waves-effect waves-light btn-small" id="update" onClick={this.handleSubmit}>
                                 {this.state._id == null ? "Add" : "Update"} Artist
                         </button>

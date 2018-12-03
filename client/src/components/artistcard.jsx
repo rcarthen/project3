@@ -58,8 +58,10 @@ class Artistcard extends Component {
                 </div>
                 <div>
                     {this.state.tweets.map(item => (
-                        <div>
-                            <div>@{item.user.screen_name} {item.text}</div>
+                        <div className="tweets">
+                        <i class="fab fa-twitter"></i>
+                            <div>@{item.user.screen_name}</div> 
+                            <p>{item.text}</p>
                             <hr/>
                         </div>
                     ))}

@@ -81,10 +81,10 @@ app.get('/api/tweets', function (req, res) {
     access_token_secret: 'xrXKLhU0Yz7tSF2z6ljR0dIUsc6PlhUEo8h6l0i8YSLCd'
   });
 
-  var params = {q: '#'+req.query.hashtag};
+  var params = {q: '@'+req.query.hashtag};
   client.get('search/tweets', params, function(error, tweets, response) {
     if (!error) {
-      console.log('result: '+tweets.statuses)
+      console.log('result: '+ tweets.statuses)
       res.json(tweets)
     }
     else{

@@ -1,5 +1,6 @@
 import React from 'react';
 import AddToCalendar from 'react-add-to-calendar';
+import './style.css/calendar.css';
  
 class Calendar extends React.Component {
     
@@ -16,7 +17,7 @@ class Calendar extends React.Component {
   
  
   render() {
-    return <AddToCalendar event={this.state.event} buttonTemplate={{'far fa-calendar-alt': 'left' }}/>
+    return <AddToCalendar event={this.state.event} buttonTemplate={{'far fa-calendar-alt': 'left'}} />
     ;
   };
   

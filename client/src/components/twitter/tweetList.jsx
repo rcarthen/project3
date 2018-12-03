@@ -11,7 +11,7 @@ class TweetList extends React.Component {
         }
     }
     componentWillMount() {
-        console.log('mounting component with hashtag'+this.state.hashtag);
+        console.log('mounting component with hashtag'+ this.state.hashtag);
         axios.get("/api/tweets?hashtag=" + this.state.hashtag).then(response => {
             this.setState({ tweets: response.data })
         })
