@@ -1,5 +1,7 @@
 const artists = require('../models/artists');
 const users= require ('../models/users');
+var Twitter = require('twitter');
+ 
 module.exports = function (app) {
 
   //get route to retrieve all artists
@@ -65,6 +67,30 @@ app.post('/api/users', function (req, res) {
     .catch(function (err) {
       res.json(err);
     });
+});
+
+
+app.get('/api/tweets', function (req, res) {
+  console.log(req.query)
+  //res.json({"foo":"bar"})
+  
+  var client = new Twitter({
+    consumer_key: 'hLFpy02Rjf2pHrOhxiLfw',
+    consumer_secret: 'jcPmgRSy5aULbfl9zl1cC5qr01lFlmP0sDXnzEHfM',
+    access_token_key: '114958731-htNvbceluQnnlqGwUi91GICeD2ZqymWojQLdUMi0',
+    access_token_secret: 'xrXKLhU0Yz7tSF2z6ljR0dIUsc6PlhUEo8h6l0i8YSLCd'
+  });
+
+  var params = {q: '#'+req.query.hashtag};
+  client.get('search/tweets', params, function(error, tweets, response) {
+    if (!error) {
+      console.log('result: '+tweets.statuses)
+      res.json(tweets)
+    }
+    else{
+      res.json(error)
+    }
+  });
 });
 
 

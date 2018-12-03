@@ -30,7 +30,7 @@ app.listen(PORT, function () {
   //   city_country: 'New York City, NY',
   //   ig_handle: '@yebbasmith',
   //   website: 'https://www.yebbasmith.com/',
-  //   fans: '/images/yebbasmithlisteners.PNG'
+  //   hashtag: 'foo'
 
   // }).then(function (response) {
 
@@ -43,7 +43,7 @@ app.listen(PORT, function () {
   //   city_country: 'Atlanta, US',
   //   ig_handle: '@mereba',
   //   website: 'http://www.merebamusic.com/',
-  //   fans: '/images/merebalisteners.PNG'
+  //   hashtag: 'foo'
   // }).then(function (response) {
 
   // });
@@ -55,7 +55,7 @@ app.listen(PORT, function () {
   //   city_country: 'London, GB',
   //   ig_handle: '@liannellahavas',
   //   website: 'http://www.liannelahavas.com/',
-  //   fans: '/images/lahavaslisteners.PNG'
+  //   hashtag: 'foo'
   // }).then(function (response) {
 
   // });
@@ -68,7 +68,7 @@ app.listen(PORT, function () {
   //   city_country: ' Los Angeles, US',
   //   ig_handle: '@zhaviaward',
   //   website: 'https://www.zhaviamusic.com/',
-  //   fans: '/images/zhavialisteners.PNG'
+  //   hashtag: 'foo'
   // }).then(function (response) {
 
   // });
@@ -80,7 +80,7 @@ app.listen(PORT, function () {
   //   city_country: 'Wellington, New Zealand',
   //   ig_handle: '@aaradhna',
   //   website: 'http://www.aaradhna.com/',
-  //   fans: '/images/aarlisteners.PNG'
+  //   hashtag: 'foo'
   // }).then(function (response) {
 
   // });
@@ -93,7 +93,7 @@ app.listen(PORT, function () {
   //   city_country: 'London, GB',
   //   ig_handle: "@jessglynne",
   //   website: 'https://jessglynne.co.uk/',
-  //   fans: 'images/jessglynnelisteners.PNG'
+  //   hashtag: 'foo'
   // }).then(function (response) {
 
   // });

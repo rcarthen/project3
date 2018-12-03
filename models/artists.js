@@ -39,7 +39,7 @@ var ArtistsSchema = new Schema({
         required: 'Required'
     },
 
-    fans:{
+    hashtag:{
     type: String,
     trim: true,
     required:'Required'

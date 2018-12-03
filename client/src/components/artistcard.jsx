@@ -2,28 +2,32 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './style.css/artistcard.css';
 import {Button} from 'react-materialize';
-import Link from 'react-router-dom';
+import TweetList from './twitter/tweetList';
 import DashNav from './dashNav';
+import Calendar from './calendar';
 
 class Artistcard extends Component {
-    state = {}
+    state = {
+        tweets:[]
+    }
     
     componentDidMount() {
         axios.get("/api/artists/" + this.props.match.params.id).then(response => {
-            console.log(response.data)
             this.setState({
                 artist_data:response.data
             })
-            console.log(this.state);
+            axios.get("/api/tweets?hashtag=" + this.state.artist_data.hashtag).then(response => {
+                this.setState({ tweets: response.data.statuses })
+                console.log(response.data)
+            })
         })
+        
     }
     removeArtist= (event)=>{
         event.preventDefault ();
         console.log(this.state.artist_data._id)
         axios.delete(`/api/artists/${this.state.artist_data._id}`)
         .then((response)=>{
-            console.log(response);
-           
              this.props.history.push('/artists/')
         
         })
@@ -47,10 +51,18 @@ class Artistcard extends Component {
                         <p>{this.state.artist_data && this.state.artist_data.city_country}</p>
                         <p>IG Handle: {this.state.artist_data && this.state.artist_data.ig_handle}</p>
                         <p>Website: <a href={this.state.artist_data && this.state.artist_data.website}>{this.state.artist_data && this.state.artist_data.website}</a></p>
-                       
+                       <Calendar/>
                         <Button waves='light' id="button" onClick={this.goToUpdateView}>Update Artist</Button>
                         <Button waves='light' id="button" onClick={this.removeArtist}>Remove Artist</Button>
                     </div>
+                </div>
+                <div>
+                    {this.state.tweets.map(item => (
+                        <div>
+                            <div>@{item.user.screen_name} {item.text}</div>
+                            <hr/>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

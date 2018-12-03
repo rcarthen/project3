@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './style.css/homepage.css';
 
 
+
 class Homepage extends Component {
   render() {
    
@@ -10,8 +11,7 @@ class Homepage extends Component {
 <div>
 <h4 className="slogan">Make Music Meaningful</h4>
 <h5 className="make">The music industry's most contemporary & effective app.</h5>
-  <img className="responsive-img hpic" src="images/homepic.JPG"/>
-  
+  <img className="responsive-img hpic" src="images/homepic.JPG"/> 
 </div>
 
   )
