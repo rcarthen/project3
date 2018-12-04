@@ -19,13 +19,11 @@ class Loginmodal extends Component {
   handleLogin = (event) => {
     event.preventDefault();
     console.log("handlelogin")
-    axios.post('/api/users', this.state).then(response => {
-      this.setState({
-        email: "",
-        password: ""
-      })
+    const success = this.props.login(this.state.email, this.state.password)
+    if (success) {
       this.props.history.push('/artists')
-    })
+    }
+
   }
   render() {
     return (
@@ -33,11 +31,11 @@ class Loginmodal extends Component {
         <form className="col s12">
           <div className="row">
             <div className="input-field col s6">
-              <input placeholder="Enter E-mail" id="email" type="email" name="email" class="validate" onChange={this.handleChange} />
+              <input id="email" type="email"  name="email" class="validate" onChange={this.handleChange} />
               <label for="email">E-mail</label>
             </div>
             <div className="input-field col s6">
-              <input placeholder="Enter Password" id="password" type="password" name="password" class="validate" onChange={this.handleChange} />
+              <input  id="password" type="password" name="password" class="validate" onChange={this.handleChange} />
               <label for="password">Password</label>
             </div>
           </div>

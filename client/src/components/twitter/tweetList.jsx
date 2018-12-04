@@ -4,7 +4,7 @@ import axios from "axios";
 class TweetList extends React.Component {
     constructor(props) {
         super(props);
-        console.log('constucted component with hashtag:' + props.hashtag)
+        console.log('constructed component with hashtag:' + props.hashtag)
         this.state = {
             hashtag:props.hashtag,
             tweets: []

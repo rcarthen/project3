@@ -5,6 +5,12 @@ class Registermodal extends Component {
     email: "",
     password: ""
   }
+
+  handleRegister = (event)=>{
+    event.preventDefault();
+    window.location='/'
+  }
+
   render() {
     return (
       <div className="row container">
@@ -26,7 +32,7 @@ class Registermodal extends Component {
               <input placeholder="Create Password" id="email" type="email" class="validate" />
               <label for="email">Password</label>
             </div>
-            <Button waves='light' id="button" onClick={this.removeArtist}>REGISTER</Button>
+            <Button waves='light' id="button" onClick={this.handleRegister}>REGISTER</Button>
           </div>
         </form>
       </div>

@@ -7,7 +7,7 @@ class Footer extends Component{
     render(){
         return <div>
             <footer>
-            <footer class="page-footer" id="footer">
+            <footer className="page-footer" id="footer">
             <div className= "container" className="col l4 offset-l2 s12">
                   <p className="white-text">MERAKI Copyright &copy; 2018 </p>
                   <p> may-rah-kee (v.)- to do something with soul, creativity, and love. </p>

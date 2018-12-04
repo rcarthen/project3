@@ -30,7 +30,7 @@ class ArtistList extends Component {
                 <div>
                     <div className="row">
                         {this.state.artists.map(item => (
-                            <div className="s12 m6 l3" key={item._id}>
+                            <div className="col s12 m6 l4" key={item._id}>
                                 <div className="card medium" id="card">
                                     <div className="card-image">
                                         <img id="profilepic" src={item.image} />
@@ -39,7 +39,7 @@ class ArtistList extends Component {
                                         <h5>{item.artist_name}</h5>
                                         <p>Genre: {item.genre}</p>
                                         <p>{item.ig_handle}</p>
-                                        <Link className="waves-effect waves-light btn-small" id="more" to={`/artists/${item._id}`}>DETAILS</Link>
+                                        <Link className="waves-effect waves-light btn-small" id="more" to={`/banana/${item._id}`}>DETAILS</Link>
                                     </div>
                                 </div>
                             </div>

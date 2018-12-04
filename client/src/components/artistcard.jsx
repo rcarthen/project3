@@ -42,10 +42,10 @@ class Artistcard extends Component {
                 <DashNav/>
             </div>
             <div className="container">
-                <div className="col s5 push-s7">
-                    <img className="responsive-img" id="solopic" src={this.state.artist_data && this.state.artist_data.image}/>
-
+            <div className='row'>
+                <div className="col s6 m6 l6">
                     <div className="container" id="moreinfo">
+                    <img className="responsive-img" id="solopic" src={this.state.artist_data && this.state.artist_data.image}/>
                         <h5 id="artistcard">{this.state.artist_data && this.state.artist_data.artist_name}</h5>
                         <p>Genre: {this.state.artist_data && this.state.artist_data.genre}</p>
                         <p>{this.state.artist_data && this.state.artist_data.city_country}</p>
@@ -56,7 +56,10 @@ class Artistcard extends Component {
                         <Button waves='light' id="button" onClick={this.removeArtist}>Remove Artist</Button>
                     </div>
                 </div>
+                
                 <div>
+                    <div className="col s6 m6 l6">
+                    <div className="twitter">
                     {this.state.tweets.map(item => (
                         <div className="tweets">
                         <i class="fab fa-twitter"></i>
@@ -64,8 +67,12 @@ class Artistcard extends Component {
                             <p>{item.text}</p>
                             <hr/>
                         </div>
+
                     ))}
                 </div>
+                </div>
+            </div>
+            </div>
             </div>
         </div>
          ) ;

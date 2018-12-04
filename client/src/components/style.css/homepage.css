@@ -4,6 +4,12 @@
 
 }
 
+.sliderfont{
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1.5px 1.5px black;
+    margin-top: 3%;
+}
+
 .make{
     position: relative;
     top: 200px;
