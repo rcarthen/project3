@@ -1,7 +1,9 @@
 #solopic{
     margin: 5%;
-    height: 52vh;
+    height: 55vh;
     width: 55vh;
+    margin-right: 2%;
+   
 }
 
 #artistcard{
@@ -11,9 +13,11 @@
 
 #button{
     background-color: #56676A;
-    margin: 1%; 
+    margin: 3%; 
     font-family: 'Lato', sans-serif;
-    display: flex;
+   float: left;
+
+  
 }
 
 #moreinfo{

@@ -30,8 +30,8 @@ class ArtistList extends Component {
                 <div>
                     <div className="row">
                         {this.state.artists.map(item => (
-                            <div className="col s12 m6 l4" key={item._id}>
-                                <div className="card medium" id="card">
+                            <div  className="col s12 m6 l4" key={item._id}>
+                                <div className="card" id="card">
                                     <div className="card-image">
                                         <img id="profilepic" src={item.image} />
                                     </div>
