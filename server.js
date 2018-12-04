@@ -74,7 +74,7 @@ app.listen(PORT, function () {
 
   // db.artists.create({
   //   artist_name: 'Aaradhna',
-  //   image: 'images/aarah.jpg',
+  //   image: '/images/aarah.jpg',
   //   genre: 'Soul',
   //   city_country: 'Wellington, New Zealand',
   //   ig_handle: '@aaradhna',
@@ -86,7 +86,7 @@ app.listen(PORT, function () {
 
   // db.artists.create({
   //   artist_name: 'Jess Glynne',
-  //   image: 'images/jessglynne.jpg',
+  //   image: '/images/jessglynne.jpg',
   //   genre: 'Soul',
   //   city_country: 'London, GB',
   //   ig_handle: "@jessglynne",
@@ -98,7 +98,7 @@ app.listen(PORT, function () {
 
   // db.artists.create({
   //   artist_name: 'Yuna',
-  //   image: 'images/yuna.jpg',
+  //   image: '/images/yuna.jpg',
   //   genre: 'Soul',
   //   city_country: 'Kuala Lumpur, Malaysia',
   //   ig_handle: "@yuna",
@@ -110,7 +110,7 @@ app.listen(PORT, function () {
 
   // db.artists.create({
   //   artist_name: 'Laura Mvula',
-  //   image: 'images/laura.jpg',
+  //   image: '/images/laura.jpg',
   //   genre: 'Soul',
   //   city_country: 'London, GB',
   //   ig_handle: "@lauramvula",
@@ -122,7 +122,7 @@ app.listen(PORT, function () {
 
   // db.artists.create({
   //   artist_name: 'Shekhinah',
-  //   image: 'images/shek.jpg',
+  //   image: '/images/shek.jpg',
   //   genre: 'Soul',
   //   city_country: 'Durban, South Africa',
   //   ig_handle: "@shekhinahd",

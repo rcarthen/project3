@@ -1,8 +1,7 @@
 #solopic{
     margin: 5%;
-    height: 60vh;
+    height: 52vh;
     width: 55vh;
-    margin-left: -.5%;
 }
 
 #artistcard{
@@ -14,7 +13,7 @@
     background-color: #56676A;
     margin: 1%; 
     font-family: 'Lato', sans-serif;
-    display: inline-flex;
+    display: flex;
 }
 
 #moreinfo{
@@ -29,5 +28,6 @@
 .twitter{
 
 margin-bottom: 15%;
+margin-left: 20%;
 
 }

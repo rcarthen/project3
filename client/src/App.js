@@ -51,7 +51,7 @@ class App extends Component {
                 <Route path="/updateArtist/:artistId"  render={(props) => <Form {...props} isAuthed={this.state.isAuthed} />} />
                 </React.Fragment> :
 
-            <Redirect to="/login"/>
+            <Redirect to="/"/>
 
                 }
                

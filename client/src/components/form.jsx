@@ -92,13 +92,13 @@ class Form extends Component {
                 <div className="container">
                     <Row>
                         <form>
-                            <Input label="ARTIST NAME" placeholder="ARTISTNAME" onChange={this.captureUserInput} id="form" name="artist_name" value={this.state.artist_name} s={12} />
-                            <Input label="IMAGE URL" placeholder="IMAGEURL" onChange={this.captureUserInput} id="form" name="image" s={12} value={this.state.image} />
+                            <Input label="ARTIST NAME" placeholder="ARTIST NAME" onChange={this.captureUserInput} id="form" name="artist_name" value={this.state.artist_name} s={12} />
+                            <Input label="IMAGE URL" placeholder="IMAGE URL" onChange={this.captureUserInput} id="form" name="image" s={12} value={this.state.image} />
                             <Input label="GENRE" placeholder="GENRE" onChange={this.captureUserInput} name="genre" s={12} value={this.state.genre} />
-                            <Input label="CITY, COUNTRY" placeholder="CITYCOUNTRY" onChange={this.captureUserInput} name="city_country" value={this.state.city_country} s={12} />
+                            <Input label="CITY, COUNTRY" placeholder="CITY,COUNTRY" onChange={this.captureUserInput} name="city_country" value={this.state.city_country} s={12} />
                             <Input label="INSTAGRAM" placeholder="INSTAGRAM" onChange={this.captureUserInput} name="ig_handle" value={this.state.ig_handle} s={12} />
                             <Input label="WEBSITE" placeholder="WEBSITE" onChange={this.captureUserInput} name="website" s={12} value={this.state.website} />
-                            <Input label="@TWITTER" placeholder="@TWITTER" onChange={this.captureUserInput} name="at" s={12} value={this.state.hashtag}/>
+                            <Input label="@TWITTER" placeholder="@TWITTER" onChange={this.captureUserInput} name="hashtag" s={12} value={this.state.hashtag}/>
                             <button className="waves-effect waves-light btn-small" id="update" onClick={this.handleSubmit}>
                                 {this.state._id == null ? "Add" : "Update"} Artist
                             </button>
